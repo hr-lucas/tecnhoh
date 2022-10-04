@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "npm run dev & npm run start",
+    "start": "vue-cli-service serve",
+    "dev": "json-server --watch server/api.json",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
